@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chivo';
+}
+body{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    width: 375px;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #121725;
+    background-image: url(./assets/bgimg.svg);
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-size: 100%;
+
+
+}
+.header, .imgZone{
+    
+    width: 375px;
+    display: flex;
+    justify-content: center;
+}
+.header{
+    flex-direction: column;
+}
+.imgZone{
+    margin-top: 62px;
+}
+.section{
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+}
+.textBox{
+    width: 327px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 57px;
+}
+h1{
+    width: 327px;
+    color: #54E6AF;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: 26px;
+    line-height: 38px;
+    margin: 0px 24px 0px 24px;
+}
+span{
+    color: #ffffff;
+}
+.text{
+    width: 327px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 25px;
+    color: #C2CBE5;
+    margin: 16px 24px 0px 24px;
+}
+.logoZone{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 33px;
+}
+h2{
+    color:#fff;
+    font-size: 14px;
+    line-height: 28px;
+    opacity: .5;
+    margin: 9px 150px 9px 32px;
+}
+h3{
+    color: #121725;
+    font-size: 14px;
+    line-height: 28px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-top: 50px;
+    margin-bottom: 94px;
+
+}
+
+form span{
+        
+    color: red;
+    display: none;
+}
+:invalid+span{
+    display:block;
+    color: red;
+    
+}
+
+.buttonwrapper{
+    display: flex;
+    flex-direction: column;
+} 
+input{
+    width: 327px;
+    height: 46px;
+    border-radius: 28px;
+    background-color: rgba(44, 52, 75, 1);
+    border: none;
+    color: rgba(255, 255, 255, 1);
+    text-align: start;
+    padding-left: 30px;
+   
+   
+   
+}
+input:invalid{
+    border: 2px solid red;
+}
+
+form button{
+    width: 326px;
+    height: 46px;
+    margin-top: 15px;
+    border-radius: 28px;
+
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 16px;
+    border-style: none;
+    color: white;
+    background-color: rgba(84, 230, 175, 1);
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+    box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.50);
+
+}
+
+button:hover{
+    background-color: rgba(179, 255, 226, 1);
+    color: rgba(18, 23, 37, 1);
+    cursor: pointer;
+    transition: 2s;
+    border: none;
+}
+.points{
+    display: none;
+}
+@media screen and (min-width:768px){
+    body{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* border: 3px solid yellow; */
+    }
+    .container{
+        width: 768px;
+        background-image: url(./assets/Bitmap\ \(3\).png);
+        background-position: right top;
+        background-blend-mode: normal;
+        background-size:50% 82%;
+        background-color: #121725;
+    }
+    .box{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    form{
+        margin-bottom: 0;
+    }
+    .section{
+        width: 635px;
+        background-color: #121725;
+        margin: 50px 50px  0px 0px;
+        /* border: 3px solid red; */
+    }
+    .logoZone{
+        margin-bottom: 153px;
+        margin-right: 230px;
+    }
+    .buttonwrapper{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-right: 240px;
+        margin-bottom: 64px;
+    }
+      .buttonwrapper button {
+        position: absolute;
+        bottom: 0;
+        left: 250px;
+        width: 180px; 
+        height: 100%; 
+    }
+    .wertilebi{
+        margin-left: 30px;
+
+    }
+    .points{
+        display: block;
+    }
+}
+@media screen and (min-width:1440px){
+    body{
+        width: 100%;
+        height: 100vh;
+        background-color: #121725;
+        /* justify-content: center; */
+
+    }
+    .container{
+        width: 1440px;
+        /* border: 3px solid blue; */
+        background-image: url(./assets/Bitmap\ \(4\).png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position:  right;
+        margin: 0;
+    }
+    .imgZone{
+        display: flex;
+        justify-content: center;
+        margin-top: 150px;
+        margin-left: 100px;
+    }
+    h1{
+        width: 665px;
+        color:#54E6AF;
+        font-size: 52px;
+        line-height: 62px;
+        text-transform: uppercase;
+    }
+    .section{
+        margin-left: 180px;
+        width: 723px;
+        /* border: 1px solid red; */
+    }
+    .logoZone{
+        margin: 0;
+        margin-right: 70px;
+    }
+    .box{
+        /* border: 1px solid yellow; */
+        margin-right: 100px;
+    }
+    .lg1{
+        width: 96px;
+        height: 29px;
+    }
+    .lg2{
+        width: 78px;
+        height: 29px;
+    }
+    .lg3{
+        width: 125px;
+        height: 18px;
+    }
+    .lg4{
+        width: 129px;
+        height: 26px;
+    }
+    .wertilebi{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+    }
+    .points{
+       position: relative;
+       right: 30px;
+       bottom: 50px;
+    }
+}
